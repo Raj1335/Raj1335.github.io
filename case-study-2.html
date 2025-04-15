@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Telegram Phishing Attack | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i id="theme-icon" class="fas fa-moon"></i>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#cybersecurity">CyberSec</a>
+            <a href="index.html#webdev">WebDev</a>
+        </div>
+    </nav>
+
+    <section class="case-study-section">
+        <div class="case-study-content">
+            <h1>Case Study: Analysis of a Telegram Phishing Attack</h1>
+            <hr>
+
+            <h2>1. Executive Summary</h2>
+            <ul>
+                <li><strong>Date</strong>: 28 February 2025</li>
+                <li><strong>Target</strong>: Telegram users via compromised accounts.</li>
+                <li><strong>Objective</strong>: Steal SMS verification codes to hijack accounts.</li>
+                <li><strong>Outcome</strong>: Attack thwarted through vigilance, URL analysis, and domain reputation checks.</li>
+            </ul>
+            <hr>
+
+            <h2>2. Incident Timeline</h2>
+            <ol>
+                <li><strong>Trigger</strong>: A message was received from a compromised friend's account:
+                    <blockquote>
+                        <p>photos of you when you were child: <a href="http://touti1.icu/login" target="_blank" rel="noopener noreferrer">http://touti1.icu/login</a>"</p>
+                    </blockquote>
+                </li>
+                <li><strong>Suspicion</strong>: Identified red flags:
+                    <ul>
+                        <li>Used HTTP (unencrypted), not HTTPS.</li>
+                        <li>Suspicious domain (touti1.icu) containing a '/login' path.</li>
+                    </ul>
+                </li>
+                <li><strong>Analysis</strong>:
+                    <ul>
+                        <li>Scanned the URL with <strong>VirusTotal</strong> (Trustwave flagged it as phishing).</li>
+                        <li>Performed a WHOIS lookup to confirm the domain's age.</li>
+                    </ul>
+                </li>
+                <li><strong>Mitigation</strong>:
+                    <ul>
+                        <li>Avoided interaction with the link.</li>
+                        <li>Alerted the compromised friend.</li>
+                    </ul>
+                </li>
+            </ol>
+            <hr>
+
+            <h2>3. Mitigation & Recommendations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Recommendation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>For Users</strong></td>
+                        <td>✅ <strong>Enable Two-Step Verification</strong>: Go to Telegram Settings &gt; Privacy &gt; Two-Step Verification.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Users</strong></td>
+                        <td>✅ <strong>Verify Links</strong>: Use <a href="https://www.virustotal.com/" target="_blank" rel="noopener noreferrer">VirusTotal</a> or <a href="https://urlscan.io/" target="_blank" rel="noopener noreferrer">URLScan</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Users</strong></td>
+                        <td>✅ <strong>Report Phishing</strong>: Forward suspicious messages to Telegram’s <a href="https://t.me/Spambot" target="_blank" rel="noopener noreferrer">@Spambot</a>.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Organizations</strong></td>
+                        <td>🛡️ <strong>Block Malicious Domains</strong>: Use DNS filtering tools like Cisco Umbrella.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Organizations</strong></td>
+                        <td>🛡️ <strong>User Training</strong>: Conduct phishing simulation exercises with tools like GoPhish.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Organizations</strong></td>
+                        <td>🛡️ <strong>Deploy HTTPS Enforcement</strong>: Use HSTS headers to block HTTP traffic.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+
+            <h2>4. Lessons Learned</h2>
+            <p><strong>Key Takeaway</strong>: Newly registered domains (&lt;7 days old) are high-risk indicators.</p>
+            <p><strong>Skills Demonstrated</strong>:</p>
+            <ul>
+                <li>Threat Hunting: Identified IoCs like HTTP and typosquatting.</li>
+                <li>OSINT: Analyzed domain registration and VirusTotal reports.</li>
+                <li>Incident Response: Reported the attack to protect others.</li>
+            </ul>
+            <hr>
+
+            <h2>5. References</h2>
+            <ul>
+                <li><a href="https://www.virustotal.com/" target="_blank" rel="noopener noreferrer">VirusTotal Scan</a></li>
+                <li><a href="https://whois.domaintools.com/touti1.icu" target="_blank" rel="noopener noreferrer">WHOIS Lookup for touti1.icu</a></li>
+            </ul>
+            <hr>
+
+            <li><a href="https://www.linkedin.com/posts/rajesh-kumbhar-72009528a_cybersecurity-phishingattack-infosec-activity-7317941688285470720-SVQY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEYinsgBx-4uudY6WphssEAfQ31RrGRNRVQ" target="_blank">See my LinkedIn post on this -></a></li>
+            
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Rajesh Kumbhar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
