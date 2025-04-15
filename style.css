@@ -150,7 +150,6 @@ body {
 .cards-container {
   width: 100%;
   padding: 1rem 0;
-  overflow-x: auto;
 }
 
 /* Cards layout */
@@ -451,4 +450,21 @@ footer {
 
 body[data-theme="dark"] .publish-date {
   color: #bbb; /* A lighter gray for dark theme */
+}
+@media (max-width: 768px) {
+  .navbar {
+    left: 50%; /* Center the navbar horizontally */
+    transform: translateX(-50%); /* Adjust for the navbar's width */
+    width: 90%; /* Adjust width as needed */
+    top: 2.5rem; /* Keep the top margin */
+  }
+
+  .nav-container {
+    padding: 0.8rem 1.5rem; /* Adjust padding for smaller screens */
+  }
+
+  .theme-toggle {
+    top: 0.1rem;
+    right: 0.1rem;
+  }
 }
