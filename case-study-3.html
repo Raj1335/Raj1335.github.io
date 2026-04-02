@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study: Chrome Zero-Day Exploitation | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i id="theme-icon" class="fas fa-moon"></i>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html#home">Home</a>
+            <a href="index.html#cybersecurity">CyberSec</a>
+            <a href="index.html#webdev">WebDev</a>
+        </div>
+    </nav>
+
+    <section class="case-study-section">
+        <div class="case-study-content">
+            <h1>Case Study: Chrome Zero-Day Exploitation (Skia + V8)</h1>
+            <hr>
+
+            <h2>1. Executive Summary</h2>
+            <ul>
+                <li><strong>Date</strong>: 10 March 2026</li>
+                <li><strong>Target</strong>: Chromium-based browser users</li>
+                <li><strong>Vulnerabilities</strong>: CVE-2026-3909 (Skia), CVE-2026-3910 (V8)</li>
+                <li><strong>Impact</strong>: Code execution, memory corruption, potential sandbox escape</li>
+                <li><strong>Status</strong>: Actively exploited in the wild</li>
+            </ul>
+            <hr>
+
+            <h2>2. Incident Timeline</h2>
+            <ol>
+                <li><strong>Trigger</strong>: User visits a malicious webpage containing crafted JavaScript.</li>
+                <li><strong>Execution</strong>: V8 vulnerability allows execution of attacker-controlled code inside the browser sandbox.</li>
+                <li><strong>Exploitation</strong>: Skia vulnerability is triggered during rendering, leading to memory corruption.</li>
+                <li><strong>Impact</strong>: Potential sandbox escape and further system-level compromise.</li>
+                <li><strong>Patch Release</strong>: Google releases fixes on 12 March 2026.</li>
+            </ol>
+            <hr>
+
+            <h2>3. Mitigation & Recommendations</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Recommendation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>For Users</strong></td>
+                        <td>✅ <strong>Update Browser</strong>: Ensure Chrome/Chromium is updated to the latest version.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Users</strong></td>
+                        <td>✅ <strong>Restart Browser</strong>: Apply updates fully by restarting.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Users</strong></td>
+                        <td>✅ <strong>Avoid Suspicious Links</strong>: Do not visit untrusted webpages.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Organizations</strong></td>
+                        <td>🛡️ <strong>Patch Management</strong>: Enforce automatic browser updates across systems.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Organizations</strong></td>
+                        <td>🛡️ <strong>Endpoint Security</strong>: Use EDR solutions to detect abnormal browser behavior.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>For Organizations</strong></td>
+                        <td>🛡️ <strong>User Awareness</strong>: Educate users about drive-by attacks.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <hr>
+
+            <h2>4. Lessons Learned</h2>
+            <p><strong>Key Takeaway</strong>: Modern browser attacks rely on chaining multiple vulnerabilities for full exploitation.</p>
+            <p><strong>Skills Demonstrated</strong>:</p>
+            <ul>
+                <li>Vulnerability Analysis: Understanding memory corruption and code execution flaws.</li>
+                <li>Threat Modeling: Identifying multi-stage attack chains.</li>
+                <li>Security Awareness: Emphasizing timely patching and safe browsing practices.</li>
+            </ul>
+            <hr>
+
+            <h2>5. References</h2>
+            <ul>
+                <li><a href="https://chromereleases.googleblog.com/" target="_blank" rel="noopener noreferrer">Chrome Release Notes</a></li>
+                <li><a href="https://nvd.nist.gov/" target="_blank" rel="noopener noreferrer">NVD CVE Database</a></li>
+            </ul>
+            <hr>
+
+            <li><a href="#" target="_blank">See my LinkedIn post on this -></a></li>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Rajesh Kumbhar</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
